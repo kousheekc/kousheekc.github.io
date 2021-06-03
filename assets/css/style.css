@@ -374,7 +374,6 @@ section {
 
 .projects .projects-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 0;
   right: 0;
@@ -510,12 +509,14 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .about .about-wrap {
-  margin-left: 50px;
-  margin-right: 50px;
+  background: #dff3fca4;
 }
 
 .about .about-wrap p{
-  color: #bbb;
+  color: #272829b7;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -658,7 +659,7 @@ section {
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
+  background: #dff3fca4;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -716,15 +717,13 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form .form-group {
-  margin-bottom: 15px;
-}
-
 .contact .php-email-form label {
+  color: #272829b7;
   padding-bottom: 8px;
 }
 
 .contact .php-email-form input, .contact .php-email-form textarea {
+  background: #dff3fca4;
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
