@@ -329,11 +329,6 @@ section {
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
-.projects .projects-item {
-  margin-bottom: 30px;
-  background: #dff3fca4;
-}
-
 .projects #projects-filters {
   padding: 0;
   margin: 0 auto 35px auto;
@@ -363,50 +358,54 @@ section {
   margin-right: 0;
 }
 
+.projects .projects-item {
+  float: left;
+  width: 31%;
+  height: 550px;
+  margin: 10px;
+  background: #dff3fca4;
+}
+
+.projects .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .projects .projects-wrap {
-  display: flex;
   align-items: center;  
   transition: 0.3s;
-  position: relative;
-  overflow: hidden;
   z-index: 1;
 }
 
-.projects .projects-wrap::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
 .projects .projects-wrap .projects-image {
-  width: 800px;
+  width: auto;
   height: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-top: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .projects .projects-wrap .projects-description {
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .projects .projects-wrap .projects-description h3 {
+  font-size: 24px;
   color: #272829;
+  padding-top: 5px;
 }
 
 .projects .projects-wrap .projects-description h6 {
   color: #272829dc;
+  padding-top: 5px;
 }
 
 .projects .projects-wrap .projects-description p {
   color: #272829b7;
+  padding-top: 5px;
 }
 
 .projects .projects-wrap .projects-links {
