@@ -329,6 +329,7 @@ section {
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
+
 .projects #projects-filters {
   padding: 0;
   margin: 0 auto 35px auto;
@@ -360,6 +361,8 @@ section {
 
 .projects .projects-item {
   float: left;
+  position: relative;
+  overflow: hidden;
   width: 31%;
   height: 520px;
   margin: 10px;
@@ -372,13 +375,7 @@ section {
   clear: both;
 }
 
-.projects .projects-wrap {
-  align-items: center;  
-  transition: 0.3s;
-  z-index: 1;
-}
-
-.projects .projects-wrap .projects-image {
+.projects .projects-item .projects-image {
   width: auto;
   height: auto;
   padding-left: 5px;
@@ -387,39 +384,39 @@ section {
   padding-bottom: 10px;
 }
 
-.projects .projects-wrap .projects-description {
+.projects .projects-item .projects-description {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.projects .projects-wrap .projects-description h3 {
+.projects .projects-item .projects-description h3 {
   font-size: 24px;
   color: #272829;
   padding-top: 5px;
 }
 
-.projects .projects-wrap .projects-description h6 {
+.projects .projects-item .projects-description h6 {
   color: #272829dc;
   padding-top: 5px;
 }
 
-.projects .projects-wrap .projects-description p {
+.projects .projects-item .projects-description p {
   color: #272829b7;
   padding-top: 5px;
 }
 
-.projects .projects-wrap .projects-links {
+.projects .projects-item .projects-links {
   opacity: 1;
   left: 0;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
   z-index: 3;
   position: absolute;
   display: flex;
   justify-content: center;
 }
 
-.projects .projects-wrap .projects-links a {
+.projects .projects-item .projects-links a {
   color: #fff;
   font-size: 28px;
   text-align: center;
@@ -427,7 +424,7 @@ section {
   width: 50%;
 }
 
-.projects .projects-wrap .projects-links a:hover {
+.projects .projects-item .projects-links a:hover {
   background: rgba(20, 157, 221, 0.95);
 }
 
