@@ -231,7 +231,7 @@ img {
 }
 
 #landing h1 {
-  margin: 0 0 10px 0;
+  padding: 2%;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -239,6 +239,7 @@ img {
 }
 
 #landing p {
+  padding: 2%;
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
@@ -253,6 +254,7 @@ img {
 }
 
 #landing a {
+  padding: 2%;
   color: #272829;
   font-size: 20px;
   margin: 0 auto 35px auto;
@@ -432,12 +434,12 @@ section {
 # Projects Details
 --------------------------------------------------------------*/
 .projects-details {
-  padding-top: 40px;
+  padding-top: 5%;
 }
 
 .projects-details .projects-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  padding: 5%;
+  /* box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08); */
 }
 
 .projects-details .projects-info ul {
@@ -448,18 +450,18 @@ section {
 }
 
 .projects-details .projects-info ul li + li {
-  margin-top: 10px;
+  margin-top: 2%;
 }
 
 .projects-details .projects-info .projects-description {
-  padding-top: 30px;
+  padding-top: 3%;
 }
 
 .projects-details .projects-info .projects-description .projects-image {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -467,12 +469,12 @@ section {
 }
 
 .projects-details .projects-info .projects-description .projects-image img {
-  width: 600px;
+  width: 80%;
   height: auto;
-  padding-left: 10px;
+  /* padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -481,22 +483,22 @@ section {
   color: #272829;
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .projects-details .projects-info .projects-description h2 {
   color: #272829;
-  padding-top: 20px;
+  /* padding-top: 20px;
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 50px; */
   font-size: 26px;
   font-weight: 700;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .projects-details .projects-info .projects-description p {
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 50px;
+  padding-right: 50px; */
   font-size: 18px;
   color: #272829b7;
 }
@@ -506,15 +508,11 @@ section {
 --------------------------------------------------------------*/
 .about .about-wrap {
   background: #dff3fca4;
-  padding: 50px;
+  padding: 5%;
 }
 
 .about .about-wrap p{
   color: #272829b7;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -587,15 +585,11 @@ section {
 
 .contact .contact-wrap {
   background: #dff3fca4;
-  padding: 50px;
+  padding: 5%;
 }
 
 .contact .contact-wrap p {
   color: #272829b7;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .contact .contact-wrap a {
