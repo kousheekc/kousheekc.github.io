@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kousheek Chakraborty - Portfolio</title>
+    <link href="../images/icon.png" rel="icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/1f45c5f5de.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <!-- navigation bar start -->
+        <nav class="navbar">
+            <div class="max-width flex justify-between items-center">
+                <div class="logo">
+                    <a href="#">My Portfolio</a>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation bar end -->
+    </header>
+    <!-- header end -->
+
+    <section class="project-details" id="project-details">
+        <div class="project-container max-width">
+            
+          <h1>Brachistochrone Curve</h1>
+
+          <p><strong>Skills: </strong>Fusion360, Digital Fabrication, Calculus of Variations, Arduino</p>
+          <p><strong>Build Instructions: </strong><a href="https://www.instructables.com/The-Brachistochrone-Curve/" target="_blank" >https://www.instructables.com/The-Brachistochrone-Curve/</a></p>
+          
+          <h3>Project Overview</h3>
+          <img src="../images/projects/Brachistochrone Curve/cover.jpg" alt="">
+          
+          <p>
+            We were fascinated by the brachistochrone curve from the day that we were introduced to the concept during one of our 
+            calculus classes. The goal of this project was to make an apparatus to visually demonstrate the phenomena of fastest 
+            descent so that it could be used during physics or maths classes for younger students. The pieces were designed in 
+            CAD since precision was key and fabricated using a 3D printer and laser cutter. We decided to make 2 other random 
+            curves to compare against the brachistochrone curve and rolled a marble down each of the curves to determine the curve 
+            of fastest descent. We later added a timing module that could measure the time taken for each marble to reach the 
+            finishing line. Finally we tested the apparatus in a classroom and received great feedback from the students and 
+            professors. This project won the Grand Prize in the Instructables Classroom Science Contest 2019.
+          </p>
+          
+          <h3>Brachistochrone Problem Statement and Demonstration with Snell’s Law</h3>
+          <img src="../images/projects/Brachistochrone Curve/1.png" alt="">
+
+          <p>
+            The brachistochrone problem revolves around finding a curve that joins two points A and B that are at different elevations, 
+            such that B is not directly below A, so that dropping a marble under the influence of a uniform gravitational field along 
+            this path will reach B in the quickest time possible.
+          </p>
+          <p>
+            One of the approaches for solving the brachistochrone problem that we particularly liked is to tackle the problem by 
+            drawing analogies with Snell's Law. Snell's Law is used to describe the path that a beam of light would follow to get 
+            from one point to another while transitioning through two different media, using Fermat's principle which says that 
+            a beam of light will always take the quickest route. 
+          </p>
+          <p>
+            A free-falling object under the influence of the gravitational field can be compared to a beam of light transitioning 
+            through changing media of lower refractive indices which correspond to the increase of speed as the object accelerates. 
+            Each time that the beam of light encounters a new medium, the beam gets slightly deviated. The angle of this deviation 
+            can be calculated using Snell's law. As one continues to add layers of reducing densities in front of the deviated beam 
+            of light, the beam deviates more and more until the beam reaches the critical angle, where the beam has a total internal 
+            reflection, the trajectory of the beam describes the brachistochrone curve. (the red curve in the diagram above)
+          </p>
+          <p>
+            The brachistochrone curve is in fact a cycloid which is the curve traced by a point on the edge of a circular wheel as 
+            the wheel rolls along a straight line without slipping. Thus if we need to draw the curve one can simply use the method 
+            above to generate it. Another unique property of the curve is that a ball released from any point of the curve will take 
+            exactly the same time to reach the bottom. The following steps describe the process of making a classroom experiment by 
+            constructing a model.
+          </p>
+          
+          <h3>Design and Fabrication of the Apparatus</h3>
+          <img src="../images/projects/Brachistochrone Curve/2.png" alt="">
+          <p>
+            We designed the brachistochrone curve on Fusion360 along with 2 other curves, one that was steeper and the other just a 
+            straight line. We created mounting pieces for the curves that allowed us to interchange curves if required. The pieces 
+            were fabricated using a 3D printer and laser cutter. The frame was built out of 1x3 inch planks of wood. The timing 
+            module consists of 3 limit switches, an arduino uno, an lcd screen and a push button. The push button starts the timer, 
+            and the individual limit switches stop the respective timers when the marble knocks into it. The timings are then 
+            displayed onto the lcd screen. 
+          </p>
+
+          <h3>Conclusion</h3>
+          <img src="../images/projects/Brachistochrone Curve/3.jpg" alt="">
+          
+          <p>
+            Once we completed the build, we tested the apparatus in a classroom. The timing module verifies the math and the marble 
+            that rolls down the brachistochrone curve is the fastest, followed by the steepest curve and finally the straight line 
+            path. The students and teacher enjoyed the experiment and we received great feedback for it.  
+          </p>
+          
+        </div>
+    </section>
+</body>
+
+</html>

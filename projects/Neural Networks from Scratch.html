@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kousheek Chakraborty - Portfolio</title>
+    <link href="../images/icon.png" rel="icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/1f45c5f5de.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <!-- navigation bar start -->
+        <nav class="navbar">
+            <div class="max-width flex justify-between items-center">
+                <div class="logo">
+                    <a href="#">My Portfolio</a>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation bar end -->
+    </header>
+    <!-- header end -->
+
+    <section class="project-details" id="project-details">
+        <div class="project-container max-width">
+            
+          <h1>Neural Networks from Scratch</h1>
+
+          <p><strong>Skills: </strong>Deep Learning, Calculus, Numerical Differentiation</p>
+          <p><strong>Source Code: </strong><a href="https://github.com/kousheekc/Deep-Learning-Toolkit-from-Scratch-Using-Numerical-Differentiation" target="_blank" >https://github.com/kousheekc/Deep-Learning-Toolkit-from-Scratch-Using-Numerical-Differentiation</a></p>
+          
+          <h3>Project Overview</h3>
+          <img src="../images/projects/Neural Networks from Scratch/cover.jpg" alt="">
+
+          <h3>Overview of Machine Learning</h3>
+          <p>
+            Machine learning is a field that revolves around developing methods and algorithms to make computers act 
+            intelligently without being explicitly programmed to do so. Acting intelligently usually consists of 
+            classification of some unknown data or making predictions based on past data. There are three broad categories 
+            for the types of machine learning algorithms:
+          </p>
+          <p>1. Supervised learning algorithms use labelled datasets to train a model that can be used eventually to 
+            classify or make predictions from new unlabelled data points. Supervised learning algorithms can be further 
+            divided into two categories: 
+          </p>
+          <p>a. Classification models: these models are used to classify the inputs into discrete groups. The output is 
+            therefore a discrete probability distribution. An example for a classification problem is determining a 
+            digit from an image of a handwritten digit.
+          </p>
+          <p>b. Regression models: these models are used to predict the output based on an unknown input, the output is 
+            therefore continuous. An example for a regression problem is determining the cost of a house based on 
+            various features of the house, such as area, location, floors etc.
+          </p>
+          <p>2. Unsupervised learning algorithms use unlabelled datasets to learn intrinsic patterns within the dataset. 
+            These algorithms can be used for clustering applications and once the training process is complete, the model 
+            can determine the cluster a new datapoint belongs to.
+          </p>
+          <p>3. Reinforcement learning algorithms learn a behavior policy that dictates how the model should act based on 
+            observations the model detects in an environment. The model learns the policy based on rewards it receives from 
+            the environment. Eventually the model learns to act in a way such that the cumulative reward it receives from 
+            the environment is maximised.
+          </p>
+          <p>The toolkit that I will be developing is targeted towards building and training supervised learning models. 
+            Therefore the toolkit requires a dataset of input feature vectors along with the corresponding labels. 
+            The toolkit is also designed to handle both classification and regression models. 
+          </p>
+          
+          <h3>Neural Network Representation</h3>
+          <p>
+            There are several clever mathematical tools and methods that can be used to build a supervised learning model. 
+            However one of the most widely used and well known is the neural network, which is inspired by the functioning 
+            of a biological brain. A neural network has two primary components:
+          </p>
+          <p>
+            1. Neurons or nodes: the neurons in a neural network are responsible for summing the input signals that are 
+            connected to it. In the context of machine learning, input signals are represented by real numbers. Apart 
+            from summing, the neuron passes the sum through a nonlinear function. This is necessary because, in practise, 
+            the relation between inputs and outputs is rarely linear, therefore nonlinear activation functions are required 
+            to introduce nonlinearities into the neural network.
+          </p>
+          <img src="../images/projects/Neural Networks from Scratch/1.png" alt="">
+          <p>
+            2. Edges: edges are similar to synapses that are present in biological brains. The role of the edges of synapses 
+            is to connect neurons together and allow signals to pass from one neuron to another. Apart from simply connecting 
+            neurons the edges carry a weight and the signal is multiplied with the weight in the edge as it passes through.
+          </p>
+          <img src="../images/projects/Neural Networks from Scratch/2.png" alt="">
+          <p>
+            Neurons and edges can be connected together to form a neural network. Once a suitable architecture is constructed 
+            using the neurons and edges, the neural network can be represented as a “black box” that takes an input and 
+            produces an output. The propagation of the input signals through the levels of the neural network is called 
+            forward propagation and the output can be generated using a tensor representation of all the weights of the 
+            edges and the nonlinear functions that were used.  
+          </p>
+          <p>
+            Initially the weights are randomly set. An input is provided and the output is compared to the desired output 
+            from the labelled dataset and the weights are adjusted so that the inputs provide the right outputs. Therefore 
+            the weights can represent dials which are tuned in the training process to output desired results. 
+          </p>
+          
+          <h3>Overview of the Training Process</h3>
+          <p>
+            The training begins by forward propagating a feature vector and obtaining the estimated output. The difference 
+            between the estimated output and the desired output is called the loss. The objective is now to determine how to 
+            update the parameters to reduce the loss. This is achieved by computing the gradient of the parameter tensor, 
+            in other words, it's the partial derivative of the loss with respect to individual parameters while keeping the 
+            other parameters fixed. Graphically, the gradient of a function outputs a vector pointing in the direction of 
+            steepest ascent. Therefore the loss can be reduced by taking a small step in the opposite direction of the gradient 
+            vector. This is known as taking a gradient step. The training process can be summarised into the following steps:
+          </p>
+          <p>
+            Repeat for all the data points in the dataset:
+          </p>
+          <p>
+            &emsp; Compute the estimated output by forward propagation
+          </p>
+          <p>
+            &emsp; Compute loss using the estimated output and the desired output
+          </p>
+          <p>
+            &emsp; Compute the gradient tensor
+          </p>
+          <p>
+            &emsp; Update the parameters by taking a small step in the opposite direction of the gradient tensor
+          </p>
+
+          <h3>Gradient Calculation</h3>
+          <p>
+            To calculate the gradient I have implemented 6 methods to numerically compute the derivative of a function at 
+            a point with respect to a variable.
+          </p>
+          <p>
+            &emsp; Forward difference
+          </p>
+          <p>
+            &emsp; Backward difference
+          </p>
+          <p>
+            &emsp; Three point endpoint 
+          </p>
+          <p>
+            &emsp; Three point midpoint
+          </p>
+          <p>
+            &emsp; Five point endpoint
+          </p>
+          <p>
+            &emsp; Five point midpoint
+          </p>
+          <img src="../images/projects/Neural Networks from Scratch/3.png" alt="">
+
+          <h3>Results</h3>
+          <p>
+            The following results show the training process while using the Iris flower classification dataset. The training 
+            was done using all 6 methods of differentiation and was finally compared to a model built and trained on Pytorch.  
+          </p>
+          <p>
+            As you can see from the results the differentiation formula that was used did not significantly affect the outcome 
+            for this specific dataset. In comparison to a model trained in Pytorch, both performed with similar accuracies on 
+            the training and testing datasets, however the Pytorch model converged within 20 epochs while the other model took 
+            100 epochs to converge. In addition, the time taken to train one epoch was much shorter on the Pytorch model.
+          </p>
+          <img src="../images/projects/Neural Networks from Scratch/4.png" alt="">
+          <img src="../images/projects/Neural Networks from Scratch/5.png" alt="">
+          
+        </div>
+    </section>
+</body>
+
+</html>
