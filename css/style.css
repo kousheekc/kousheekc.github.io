@@ -296,6 +296,8 @@ body{
 .project-details .project-container{
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .project-details .project-container img{
