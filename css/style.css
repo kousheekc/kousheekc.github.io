@@ -9,6 +9,10 @@
     --light: #AAAAAA; 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -72,7 +76,6 @@ body{
 
 .home .home-content{
     margin-top: 100px;
-    margin-bottom: 100px;
 }
 
 .home .profile{
@@ -134,6 +137,7 @@ body{
 
 /* projects section styling */
 .projects{
+    padding-top: 100px;
     background: var(--white);
 }
 
@@ -163,7 +167,6 @@ body{
     grid-template-columns: repeat(auto-fit, 350px);
     gap: 30px;
     justify-content: center;
-    margin-bottom: 100px;
 }
 
 .projects .projects-content .post{
@@ -201,6 +204,7 @@ body{
 
 /* about me section styling */
 .about{
+    padding-top: 100px;
     background: var(--white);
 }
 
@@ -226,7 +230,7 @@ body{
 
 .about .about-content{
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .about .about-content .about-image{
@@ -255,6 +259,7 @@ body{
 
 /* contact section styling */
 .contact{
+    padding-top: 100px;
     background: var(--white);
 }
 
