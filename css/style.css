@@ -389,3 +389,9 @@ body{
         flex: 100%;
     }
 }
+
+@media (max-width: 400px){
+    .projects .projects-content{
+        grid-template-columns: repeat(auto-fit, 250px);
+    }
+}
