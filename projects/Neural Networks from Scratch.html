@@ -60,27 +60,33 @@
             classification of some unknown data or making predictions based on past data. There are three broad categories 
             for the types of machine learning algorithms:
           </p>
+          <br>
           <p>1. Supervised learning algorithms use labelled datasets to train a model that can be used eventually to 
             classify or make predictions from new unlabelled data points. Supervised learning algorithms can be further 
             divided into two categories: 
           </p>
+          <br>
           <p>a. Classification models: these models are used to classify the inputs into discrete groups. The output is 
             therefore a discrete probability distribution. An example for a classification problem is determining a 
             digit from an image of a handwritten digit.
           </p>
+          <br>
           <p>b. Regression models: these models are used to predict the output based on an unknown input, the output is 
             therefore continuous. An example for a regression problem is determining the cost of a house based on 
             various features of the house, such as area, location, floors etc.
           </p>
+          <br>
           <p>2. Unsupervised learning algorithms use unlabelled datasets to learn intrinsic patterns within the dataset. 
             These algorithms can be used for clustering applications and once the training process is complete, the model 
             can determine the cluster a new datapoint belongs to.
           </p>
+          <br>
           <p>3. Reinforcement learning algorithms learn a behavior policy that dictates how the model should act based on 
             observations the model detects in an environment. The model learns the policy based on rewards it receives from 
             the environment. Eventually the model learns to act in a way such that the cumulative reward it receives from 
             the environment is maximised.
           </p>
+          <br>
           <p>The toolkit that I will be developing is targeted towards building and training supervised learning models. 
             Therefore the toolkit requires a dataset of input feature vectors along with the corresponding labels. 
             The toolkit is also designed to handle both classification and regression models. 
@@ -92,6 +98,7 @@
             However one of the most widely used and well known is the neural network, which is inspired by the functioning 
             of a biological brain. A neural network has two primary components:
           </p>
+          <br>
           <p>
             1. Neurons or nodes: the neurons in a neural network are responsible for summing the input signals that are 
             connected to it. In the context of machine learning, input signals are represented by real numbers. Apart 
@@ -113,6 +120,7 @@
             forward propagation and the output can be generated using a tensor representation of all the weights of the 
             edges and the nonlinear functions that were used.  
           </p>
+          <br>
           <p>
             Initially the weights are randomly set. An input is provided and the output is compared to the desired output 
             from the labelled dataset and the weights are adjusted so that the inputs provide the right outputs. Therefore 
@@ -129,6 +137,7 @@
             steepest ascent. Therefore the loss can be reduced by taking a small step in the opposite direction of the gradient 
             vector. This is known as taking a gradient step. The training process can be summarised into the following steps:
           </p>
+          <br>
           <p>
             Repeat for all the data points in the dataset:
           </p>
@@ -168,6 +177,7 @@
           <p>
             &emsp; Five point midpoint
           </p>
+          <br>
           <img src="../images/projects/Neural Networks from Scratch/3.png" alt="">
 
           <h3>Results</h3>
@@ -175,6 +185,7 @@
             The following results show the training process while using the Iris flower classification dataset. The training 
             was done using all 6 methods of differentiation and was finally compared to a model built and trained on Pytorch.  
           </p>
+          <br>
           <p>
             As you can see from the results the differentiation formula that was used did not significantly affect the outcome 
             for this specific dataset. In comparison to a model trained in Pytorch, both performed with similar accuracies on 

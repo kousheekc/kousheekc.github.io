@@ -301,8 +301,8 @@ body{
 .project-details .project-container{
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .project-details .project-container img{
@@ -317,11 +317,12 @@ body{
 }
 
 .project-details .project-container h3{
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .project-details .project-container p{
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .project-details .project-container a{
@@ -395,6 +396,11 @@ body{
 
     .about .about-content .right{
         flex: 100%;
+    }
+
+    .project-details .project-container{
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
