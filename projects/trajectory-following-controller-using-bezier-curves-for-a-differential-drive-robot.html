@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kousheek Chakraborty - Portfolio</title>
+    <link href="../images/icon.png" rel="icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/1f45c5f5de.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <!-- navigation bar start -->
+        <nav class="navbar">
+            <div class="max-width flex justify-between items-center">
+                <div class="logo">
+                    <a href="#">Kousheek's Portfolio</a>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../images/kousheek-chakraborty-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                        <li><a href="../index.html#about">About Me</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation bar end -->
+    </header>
+    <!-- header end -->
+
+    <section class="project-details" id="project-details">
+        <div class="project-container">
+            
+          <h1>Trajectory Following Controller using Bezier Curves for a Differential Drive Robot</h1>
+
+          <p><strong>Skills: </strong>Mobile Robot Kinematics, Bezier Interpolation, Arduino</p>
+          <p><strong>Source Code: </strong><a href="https://github.com/kousheekc/Trajectory-Following-Controller-using-Bezier-Curves-for-a-Differential-Drive-Robot" target="_blank"  rel="noopener noreferrer">https://github.com/kousheekc/Trajectory-Following-Controller-using-Bezier-Curves-for-a-Differential-Drive-Robot</a></p>
+          
+          <h3>Project Overview</h3>
+          <img src="../images/projects/Trajectory Following Controller using Bezier Curves for a Differential Drive Robot/cover.jpg" alt="">
+          
+          <p>
+            Generating trajectories from user specified way-points is a key building block for many autonomous robotic pipelines. 
+            In this work, two trajectory generation systems are implemented and tested on a scratch-built differential drive robotic 
+            platform. The user specifies an ordered list of 2D coordinate points in the world space along with the respective heading 
+            angles at those locations. The proposed system generates a trajectory that passes through each of the points while 
+            maintaining the desired heading. Next, the system generates control signals comprising of linear and angular components 
+            which are transmitted to the robot. The proposed approach is thoroughly tested on a scratch-built differential drive robot 
+            demonstrating the suitability and robustness of the trajectory generation pipeline.
+          </p>
+          <br>
+          <p>
+              Note that a detailed write up about this project can be found <a href="">here</a>.
+          </p>
+          
+          <h3>Odometry Motion Model</h3>
+          <img src="../images/projects/Trajectory Following Controller using Bezier Curves for a Differential Drive Robot/1.png" alt="">
+          <p>
+            The objective of the odometry motion model is to determine a sequence of rotations and translations to create a trajectory 
+            between the current and desired poses. In the case of a differential drive system, a pose consists of 3 values: 
+            the 2D coordinates (x and y) and the heading (theta) of the robot and the trajectory consists of 3 parts:
+          </p>
+          <br>
+          <p>
+            1. A rotation on spot to align the robot with the next waypoint. <br>        
+            2. A translation to move the robot to the next waypoint. <br>
+            3. A rotation on spot to align the robot with the desired heading at the waypoint. <br>      
+          </p>
+
+          <h3>Bezier Curve Interpolation</h3>
+          <img src="../images/projects/Trajectory Following Controller using Bezier Curves for a Differential Drive Robot/2.png" alt="">
+
+          <p>
+            The Bezier curve interpolation method can be used to generate a parametric cubic spline through a set of points with 
+            additional constraints set by guide points. This can be used in the context of trajectory generation to create a path 
+            through a set of waypoints. Setting the guide points appropriately (equidistant from the central point and aligned)
+            generate in a C2 continuous trajectory through the waypoints resulting in a smooth motion for the mobile robot. 
+          </p>
+
+          <h3>Hardware</h3>
+          <img src="../images/projects/Trajectory Following Controller using Bezier Curves for a Differential Drive Robot/3.png" alt="">
+
+          <p>
+            A differential drive robotic platform was required to test the trajectory controller in real world conditions to verify 
+            the overall performance of the system. Here is a list of parts and components used in the system.
+          </p>
+          <br>
+          <p>
+            1. Master computer <br>
+            2. Onboard computer (Raspberry Pi) <br>
+            3. Microcontroller (Arduino Uno) <br>
+            4. Motor drivers (A4988) <br>
+            5. Actuators (NEMA17 stepper motors) <br>
+            6. Power source (11.v LiPo battery) <br>
+            7. Chassis (custom laser cut acrylic) <br>
+          </p>
+
+          <h3>Method</h3>
+          <p>
+            The following steps outline the start to finish process of the trajectory following system incorporated on the 
+            differential drive platform:
+          </p>
+
+          <br>
+          
+          <p>
+            1. The operator or a higher level algorithm sets waypoints (x, y, theta) on the master computer <br>
+            2. The master computer transmits the waypoints to the onboard computer through a socket connection <br>
+            3. The onboard computer generates a time parametrized trajectory using the odometry motion model or the Bezier <br> 
+            curve interpolation algorithm <br>
+            4. A timer gets triggered <br>
+            5. Instantaneous velocity commands (linear and angular) are calculated based on the time elapsed <br>
+            6. The velocity command gets transmitted to the microcontroller through a serial communication interface <br>
+            7. The wheel velocities are calculated using mobile robot kinematics <br>
+            8. The microcontroller sends hardware signals to the actuators to spin at the required velocity <br>  
+          </p>
+       
+          <h3>Conclusion</h3>
+          <img src="../images/projects/Trajectory Following Controller using Bezier Curves for a Differential Drive Robot/4.jpg" alt="">
+          <p>
+            Overall, the two trajectory following algorithms have been tested on a differential drive robotic platform built using off the 
+            shelf parts and components and the performance of the two algorithms were evaluated. On the whole, the results suggest that the 
+            algorithm that uses Bezier interpolation to generate a trajectory introduces fewer errors due to the C2 continuous properties 
+            of the Bezier interpolation algorithm.
+          </p>
+          <br>
+          <p>
+            The system can be further improved by building a comprehensive user interface consisting of a map of the environment that 
+            can be hosted on the master computer to intuitively set the waypoints and headings and transmit them to the robot. 
+            Additionally, a closed loop velocity control system can be incorporated for the motors to account for disturbances and 
+            skipped steps. Finally a lidar sensor and IMU can be added to the robotic platform to map the environment realtime and 
+            perform simultaneous localization and mapping. 
+          </p>
+          
+          
+        </div>
+    </section>
+</body>
+
+</html>
