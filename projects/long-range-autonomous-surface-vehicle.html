@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kousheek Chakraborty - Portfolio</title>
+    <link href="../images/icon.png" rel="icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/1f45c5f5de.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <!-- navigation bar start -->
+        <nav class="navbar">
+            <div class="max-width flex justify-between items-center">
+                <div class="logo">
+                    <a href="#">Kousheek's Portfolio</a>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../images/kousheek-chakraborty-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                        <li><a href="../index.html#about">About Me</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation bar end -->
+    </header>
+    <!-- header end -->
+
+    <section class="project-details" id="project-details">
+        <div class="project-container">
+            
+          <h1>Long Range Autonomous Surface Vehicle</h1>
+
+          <p><strong>Skills: </strong>PID Control, Waypoint Tracking, GPS, Arduino</p>
+          <p><strong>Source Code: </strong><a href="https://github.com/kousheekc/Long-Range-Autonomous-Surface-Vehicle" target="_blank"  rel="noopener noreferrer">https://github.com/kousheekc/Long-Range-Autonomous-Surface-Vehicle</a></p>
+          
+          <h3>Project Overview</h3>
+          <img src="../images/projects/Long Range Autonomous Surface Vehicle/cover.jpg" alt="">
+          
+          <p>
+            Recently there have been beach restoration projects in our city and instruments were required to measure the depth of the 
+            sea floor at various locations. This process turned out to be tedious and expensive due to the labor costs as well as the 
+            expensive equipment. A boat was fitted with various sensors and drove along the coast for hours. This inspired me to build 
+            a small scale autonomous boat to perform the same tasks. The boat could be fitted with the necessary sensors and programmed 
+            to drive along a desired path and collect the necessary information. The boat would also consist of a radio based telemetry 
+            system so that the health of the boat could be monitored in real time. The boat needs to also have the feature of working 
+            autonomously and manually.
+          </p>
+          <br>
+          <p>
+            Apart from this specific experiment, I wanted to create a platform for a more general requirement, such that sensors could be 
+            easily swapped out to perform other experiments. Additionally, the aim was to create a low cost system using recycled parts 
+            and materials.
+          </p>
+          <br>
+          <p>
+            Note that a detailed write up about this project can be found <a href="">here</a>.
+          </p>
+
+          <h3>Design of the Hull</h3>
+          <img src="../images/projects/Long Range Autonomous Surface Vehicle/1.jpg" alt="">
+          <p>
+            The hull was built using recycled water bottles. 4 two liter water bottles were used in pairs to build catamaran style hull.
+            The tapered top of the bottle makes for an ideal design for the hull since it cuts through the water smoothly and creates 
+            very little hydrodynamic drag. The two hulls were then connected using two crossbeams that were attached using zip ties.
+            Finally, a Tupperware container was used to contain the electronic components and was mounted onto the crossbeams using 
+            double sided tape.
+          </p>
+          <h3>Control System</h3>
+          <p>
+            The objective of the autonomous surface vehicle was to track a trajectory defined by GPS-based waypoints set by the operator.
+            To achieve this, the boat used a GPS module and a compass module connected to an Arduino microcontroller. Once the GPS 
+            coordinates of a waypoint is set, the boat determines its own location using the onboard GPS module and calculates the 
+            required heading (in degrees) to move towards the set waypoint. Next, the boat determines its current heading using the 
+            onboard compass module and calculates the error between the current heading and the desired heading. The error is then 
+            fed into a proportional controller or a PID controller which determines the necessary velocities of the two motors to create
+            a differential thrust that will turn the boat towards the required heading. Once the boat reaches within 5 metres of the set 
+            waypoint, it transitions to the next waypoint set by the operator. 
+          </p>
+
+          <h3>Telemetry System</h3>
+          <img src="../images/projects/Long Range Autonomous Surface Vehicle/2.png" alt="">
+
+          <p>
+            Since the boat is expected to execute long range trajectories that could potentially last for a few hours, a telemetry system 
+            was required to relay useful information back to the operator. The telemetry system consists of two 2.4 GHz radio transceivers
+            mounted on the boat and the base computer. The boat sends various signals such as the current location, current heading, 
+            battery voltage, motor speeds etc. Additionally, the telemetry allows the operator to set various user defined constants relating
+            to the dynamics of the boat such as the cruise speed, kp, ki, kd values for the PID controller and so on. 
+          </p>
+          <br>
+          <img src="../images/projects/Long Range Autonomous Surface Vehicle/3.png" alt="">
+          <p>
+            The data is neatly presented on the user interface desgined on python, which communicates the Arduino based telemetry receiver.
+            The python program communicates with the Arduino through a serial interface.
+          </p>
+
+          <h3>PCB Design and Fabrication</h3>
+          <img src="../images/projects/Long Range Autonomous Surface Vehicle/4.png" alt="">
+          <img src="../images/projects/Long Range Autonomous Surface Vehicle/5.jpg" alt="">
+
+          The boat consists of multiple interconnected sensor modules therefore a robust connection system was required. In most cases,
+          jumper wires can be used to make the connections, however, since the boat is expected to move vigorously, I designed a PCB
+          to hold all the various sensors and the Arduino Uno microcontroller. The PCB was later manufactured using an online PCB 
+          fabrication platform. 
+
+          <h3>Conclusion</h3>
+          <img src="../images/projects/Long Range Autonomous Surface Vehicle/6.jpg" alt="">
+
+          The boat is fun to play around with as a toy but can be used for so much more. The autonomous features provide various
+          capabilities to perform all kinds of scientific experiments. For example, mounting a sonar sensor to the boat to measure 
+          the depth of a lagoon at various points to generate a bathymetry map. Similarly, incorporating a temperature sensor to 
+          measure the temperature of the water in a reservoir at various locations to generate a heat map of the region is possible. 
+          Apart from scientific experiments, the cheap and sturdy build creates a perfect platform for further development.
+
+        </div>
+    </section>
+</body>
+
+</html>
