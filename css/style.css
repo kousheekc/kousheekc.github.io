@@ -178,6 +178,13 @@ body{
     cursor: pointer;
 }
 
+.projects .projects-content .post:hover{
+    border-radius: 6px;
+    border: 1px solid var(--light);
+    box-shadow: 0px 0px 5px var(--dark);
+    cursor: pointer;
+}
+
 .projects .projects-content .post .thumbnail{
     padding: 5px;
     max-width: 100%;
