@@ -73,6 +73,7 @@ body{
 .home{
     background: var(--white);
     min-height: 500px;
+    height: 100vh;
 }
 
 .home .home-content{
@@ -128,6 +129,7 @@ body{
 
 .home .social-btn-container i{
     margin-top: 30px;
+    margin-bottom: 50px;
     color: var(--semi-dark);
     font-size: 25px;
     cursor: pointer;
