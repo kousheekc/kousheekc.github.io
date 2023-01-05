@@ -139,6 +139,14 @@ body{
     color: var(--dark);
 }
 
+.home .social-btn-container .thumbnail{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width:25px;
+    height:auto;
+    cursor: pointer;
+}
+
 /* projects section styling */
 .projects{
     padding-top: 100px;
