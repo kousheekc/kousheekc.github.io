@@ -72,12 +72,13 @@ body{
 /* home section styling */
 .home{
     background: var(--white);
-    min-height: 500px;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
 .home .home-content{
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .home .profile{
