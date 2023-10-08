@@ -224,11 +224,14 @@ body{
 
 /* about me section styling */
 .about{
-    padding-top: 100px;
     background: var(--white);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .about .title{
+    padding-top: 100px;
     position: relative;
     text-align: center;
     font-size: 30px;
