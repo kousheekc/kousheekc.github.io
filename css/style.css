@@ -227,7 +227,6 @@ body{
     background: var(--white);
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .about .title{
@@ -431,6 +430,6 @@ body{
 
 @media (max-width: 400px){
     .projects .projects-content{
-        grid-template-columns: repeat(auto-fit, 250px);
+        grid-template-columns: repeat(auto-fit, 90vw);
     }
 }
