@@ -357,6 +357,14 @@ body{
     color: var(--dark);
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
 /* responsive media  */
 @media (max-width: 1100px){
     .about .about-content .about-image img{
