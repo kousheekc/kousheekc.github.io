@@ -1,187 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C521MYX3DB"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-C521MYX3DB"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-C521MYX3DB');
+      gtag("config", "G-C521MYX3DB");
     </script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Kousheek Chakraborty - Portfolio</title>
-    <link href="./images/icon.png" rel="icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/1f45c5f5de.js" crossorigin="anonymous"></script>
+    <link href="./images/icon.png" rel="icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1f45c5f5de.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header start -->
     <header>
-        <!-- navigation bar start -->
-        <nav class="navbar">
-            <div class="max-width flex justify-between items-center">
-                <div class="logo">
-                    <a href="#home">My Portfolio</a>
-                </div>
+      <!-- navigation bar start -->
+      <nav class="navbar">
+        <div class="max-width flex justify-between items-center">
+          <div class="logo">
+            <a href="#home">My Portfolio</a>
+          </div>
 
-                <div class="menu">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="images/kousheek-chakraborty-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li>
+                <a
+                  href="images/kousheek-chakraborty-cv.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Resume</a
+                >
+              </li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
 
-                <div class="menu-btn">
-                    <i class="fa fa-bars"></i>
-                </div>
-            </div>
-        </nav>
-        <!-- navigation bar end -->
+          <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- navigation bar end -->
     </header>
     <!-- header end -->
 
     <!-- home section start -->
     <section class="home flex" id="home">
-        <div class="home-content max-width">
-            <div class="profile">
-                <img src="./images/profile_pic.jpg" alt="Avatar">
-            </div>
-
-            <div class="text-1">
-                Hi, I'm Kousheek Chakraborty
-            </div>
-
-            <div class="text-2">
-                Roboticist | Machine Learning Engineer
-            </div>
-
-            <div class="social-btn-container flex justify-between">
-                <a href="https://github.com/kousheekc" target="_blank" rel="noopener noreferrer" class="github"><i class="fa fa-github"></i></a>
-                <a href="mailto:kousheekc@gmail.com" class="mail"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.instructables.com/member/Technovation/" target="_blank" rel="noopener noreferrer" class="instructables"><img class="thumbnail" src="./images/instructables_logo.jpg" alt=""></a>
-                <a href="https://www.linkedin.com/in/kousheekc/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-
-            <div class="home-btn-container items-center">
-                <div class="home-btn flex">
-                    <a href="images/kousheek-chakraborty-cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-                </div>
-                <div class="home-btn flex">
-                    <a href="#projects">View Projects</a>
-                </div>
-            </div>
+      <div class="home-content max-width">
+        <div class="profile">
+          <img src="./images/profile_pic.jpg" alt="Avatar" />
         </div>
+
+        <div class="text-1">Hi, I'm Kousheek Chakraborty</div>
+
+        <div class="text-2">Roboticist | Machine Learning Engineer</div>
+
+        <div class="social-btn-container flex justify-between">
+          <a
+            href="https://github.com/kousheekc"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="github"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="mailto:kousheekc@gmail.com" class="mail"
+            ><i class="fa fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.instructables.com/member/Technovation/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="instructables"
+            ><img
+              class="thumbnail"
+              src="./images/instructables_logo.jpg"
+              alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/kousheekc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="linkedin"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+
+        <div class="home-btn-container items-center">
+          <div class="home-btn flex">
+            <a
+              href="images/kousheek-chakraborty-cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Download CV</a
+            >
+          </div>
+          <div class="home-btn flex">
+            <a href="#projects">View Projects</a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- home section end -->
 
     <!-- projects section start  -->
     <section class="projects" id="projects">
-        <h3 class="title">My Projects</h3>
-        <div class="projects-content">
+      <h3 class="title">My Projects</h3>
+      <div class="projects-content">
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/isaac_drone_racer';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Isaac Drone Racer/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">Isaac Drone Racer</h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>RL, IsaacLab, Isaac Sim, Aerial Robotics
+            </p>
+            <p class="post-intro">
+              Developed a reinforcement learning framework for high speed
+              autonomous drone racing, built on top of IsaacLab, with a focus on
+              accurate physics and modular design.
+            </p>
+          </div>
+        </div>
 
-            <div class="post" onclick="location.href='https://arxiv.org/abs/2504.08114';">
-                <img class="thumbnail" src="./images/projects/RL-based Control of UAS Subject to Significant Disturbance/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">RL-based Control of UAS Subject to Significant Disturbance</h3>
-                    <p class="post-skills"><strong>Skills: </strong>RL, IsaacGym, Aerial Robotics</p>
-                    <p class="post-intro">Developed an RL-based control system for drones that uses predictive cues to proactively counteract disturbances. - ICUAS 2025</p>
-                </div>
-            </div>
+        <div
+          class="post"
+          onclick="location.href='https://arxiv.org/abs/2504.08114';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/RL-based Control of UAS Subject to Significant Disturbance/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">
+              RL-based Control of UAS Subject to Significant Disturbance
+            </h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>RL, IsaacGym, Aerial Robotics
+            </p>
+            <p class="post-intro">
+              Developed an RL-based control system for drones that uses
+              predictive cues to proactively counteract disturbances. - ICUAS
+              2025
+            </p>
+          </div>
+        </div>
 
-            <div class="post" onclick="location.href='https://github.com/kousheekc/nmpc_px4_ros2';">
-                <img class="thumbnail" src="./images/projects/NMPC PX4 ROS2 Trajectory Tracking Controller/cover.png" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">NMPC PX4 ROS2 Trajectory Tracking Controller</h3>
-                    <p class="post-skills"><strong>Skills: </strong>ACADOS, Casadi, PX4, ROS2</p>
-                    <p class="post-intro">Built a ROS2 package for nonlinear model predictive control (NMPC) based trajectory tracking for PX4 based drones</p>
-                </div>
-            </div>
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/nmpc_px4_ros2';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/NMPC PX4 ROS2 Trajectory Tracking Controller/cover.png"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">
+              NMPC PX4 ROS2 Trajectory Tracking Controller
+            </h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>ACADOS, Casadi, PX4, ROS2
+            </p>
+            <p class="post-intro">
+              Built a ROS2 package for nonlinear model predictive control (NMPC)
+              based trajectory tracking for PX4 based drones
+            </p>
+          </div>
+        </div>
 
-            <div class="post" onclick="location.href='./projects/robocup.html';">
-                <img class="thumbnail" src="./images/projects/Collaborative AGV Swarm for Smart Factory Operations/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Collaborative AGV Swarm for Smart Factory Operations</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Nav2, ROS2, AGV Swarm, Task Scheduling</p>
-                    <p class="post-intro">Developed a Collaborative AGV Swarm controlled by a centralised task scheduler to execute product orders in a smart factory setting - Robocup 2024</p>
-                </div>
-            </div>
+        <div class="post" onclick="location.href='./projects/robocup.html';">
+          <img
+            class="thumbnail"
+            src="./images/projects/Collaborative AGV Swarm for Smart Factory Operations/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">
+              Collaborative AGV Swarm for Smart Factory Operations
+            </h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Nav2, ROS2, AGV Swarm, Task Scheduling
+            </p>
+            <p class="post-intro">
+              Developed a Collaborative AGV Swarm controlled by a centralised
+              task scheduler to execute product orders in a smart factory
+              setting - Robocup 2024
+            </p>
+          </div>
+        </div>
 
-            <div class="post" onclick="location.href='./projects/cohoma.html';">
-                <img class="thumbnail" src="./images/projects/Aerial Ground Collaboration for Autonomous Navigation/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Aerial Ground Collaboration for Autonomous Navigation</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Aerial vehicles, mobile robots, ROS, C++</p>
-                    <p class="post-intro">Developed an aerial ground robotic system consisting of a drone and a mobile robot for autonomous navigation in challenging terrain</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://github.com/kousheekc/PAWS-Quadruped-Robot';">
-                <img class="thumbnail" src="./images/projects/Learning Quadrupedal Locomotion through Transfer Learning/cover.png" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Morphology-Agnostic Reinforcement Learning for Quadrupedal Locomotion</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Quadruped Locomotion, ROS, Reinforcement Learning</p>
-                    <p class="post-intro">Built an RL algorithm to learn a morphology agnostic quadrupedal locomotion in simulation to generalise to any quadrupedal robot configuration</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://github.com/kousheekc/Kinematics';">
-                <img class="thumbnail" src="./images/projects/Open Source Kinematics Library for Arduino-based Microncontrollers/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Open Source Kinematics Library for Arduino-based Microncontrollers</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Kinematics, Dynamics, Arduino</p>
-                    <p class="post-intro">Developed an open source kinematics library for Arduino based microcontrollers featuring transformation matrix manipulation, Jacobian computation and forward and inverse kinematics using Newton Raphson method</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://github.com/kousheekc/Trajectory-Following-Controller';">
-                <img class="thumbnail" src="./images/projects/Trajectory Following Controller using Bezier Curves for a Differential Drive Robot/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Trajectory Following Controller using Bezier Curves for a Differential Drive Robot</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Mobile Robot Kinematics, Bezier Interpolation, Arduino</p>
-                    <p class="post-intro">Designed a trajectory following controller which tracks waypoints and global yaw and tested the pipeline on a scratch-built differential drive robot</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://github.com/kousheekc/Reinforcement-Learning-Toolbox-for-Robotics';">
-                <img class="thumbnail" src="./images/projects/Reinforcement Learning Toolbox for Robotics/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Reinforcement Learning Toolbox for Robotics</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Reinforcement Learning, Pytorch, Python</p>
-                    <p class="post-intro">Developed a toolbox with highly optimized implementations of deep reinforcement learning algorithms for robotics using Pytorch and Python3</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://www.instructables.com/The-Brachistochrone-Curve/';">
-                <img class="thumbnail" src="./images/projects/Brachistochrone Curve/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Brachistochrone Curve</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Fusion360, Digital Fabrication, Calculus of Variations, Arduino</p>
-                    <p class="post-intro">Developed an apparatus to visually demonstrate the phenomena of fastest descent which can be used in physics or math classes for younger students</p>
-                </div>
-            </div>
+        <div class="post" onclick="location.href='./projects/cohoma.html';">
+          <img
+            class="thumbnail"
+            src="./images/projects/Aerial Ground Collaboration for Autonomous Navigation/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">
+              Aerial Ground Collaboration for Autonomous Navigation
+            </h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Aerial vehicles, mobile robots, ROS, C++
+            </p>
+            <p class="post-intro">
+              Developed an aerial ground robotic system consisting of a drone
+              and a mobile robot for autonomous navigation in challenging
+              terrain
+            </p>
+          </div>
+        </div>
 
-            <div class="post" onclick="location.href='https://youtu.be/N-BDqD3-VUM';">
-                <img class="thumbnail" src="./images/projects/Rubiks Cube Solver/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Rubik's Cube Solver</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Algorithms, PyQt5, Arduino</p>
-                    <p class="post-intro">Designed and built a Rubik's Cube Solver featuring the God's algorithm solution, vision based color detection and 4 independent arms consisting of 2 actuators each to manipulate the cube.</p>
-                </div>
-            </div>
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/PAWS-Quadruped-Robot';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Learning Quadrupedal Locomotion through Transfer Learning/cover.png"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">
+              Morphology-Agnostic Reinforcement Learning for Quadrupedal
+              Locomotion
+            </h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Quadruped Locomotion, ROS, Reinforcement
+              Learning
+            </p>
+            <p class="post-intro">
+              Built an RL algorithm to learn a morphology agnostic quadrupedal
+              locomotion in simulation to generalise to any quadrupedal robot
+              configuration
+            </p>
+          </div>
+        </div>
 
-            <!-- <div class="post">
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/Kinematics';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Open Source Kinematics Library for Arduino-based Microncontrollers/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">
+              Open Source Kinematics Library for Arduino-based Microncontrollers
+            </h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Kinematics, Dynamics, Arduino
+            </p>
+            <p class="post-intro">
+              Developed an open source kinematics library for Arduino based
+              microcontrollers featuring transformation matrix manipulation,
+              Jacobian computation and forward and inverse kinematics using
+              Newton Raphson method
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/Trajectory-Following-Controller';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Trajectory Following Controller using Bezier Curves for a Differential Drive Robot/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">
+              Trajectory Following Controller using Bezier Curves for a
+              Differential Drive Robot
+            </h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Mobile Robot Kinematics, Bezier
+              Interpolation, Arduino
+            </p>
+            <p class="post-intro">
+              Designed a trajectory following controller which tracks waypoints
+              and global yaw and tested the pipeline on a scratch-built
+              differential drive robot
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/Reinforcement-Learning-Toolbox-for-Robotics';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Reinforcement Learning Toolbox for Robotics/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">
+              Reinforcement Learning Toolbox for Robotics
+            </h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Reinforcement Learning, Pytorch, Python
+            </p>
+            <p class="post-intro">
+              Developed a toolbox with highly optimized implementations of deep
+              reinforcement learning algorithms for robotics using Pytorch and
+              Python3
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://www.instructables.com/The-Brachistochrone-Curve/';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Brachistochrone Curve/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">Brachistochrone Curve</h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Fusion360, Digital Fabrication, Calculus
+              of Variations, Arduino
+            </p>
+            <p class="post-intro">
+              Developed an apparatus to visually demonstrate the phenomena of
+              fastest descent which can be used in physics or math classes for
+              younger students
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://youtu.be/N-BDqD3-VUM';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Rubiks Cube Solver/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">Rubik's Cube Solver</h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Algorithms, PyQt5, Arduino
+            </p>
+            <p class="post-intro">
+              Designed and built a Rubik's Cube Solver featuring the God's
+              algorithm solution, vision based color detection and 4 independent
+              arms consisting of 2 actuators each to manipulate the cube.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="post">
                 <img class="thumbnail" src="./images/projects/NuSerial/cover.jpg" alt="">
                 <div class="post-preview">
                     <h3 class="post-title">NuSerial</h3>
@@ -189,117 +393,263 @@
                     <p class="post-intro">Developed a modern widget-based serial monitor dashboard accompanied by a serial communication library for the Arduino ecosystem</p>
                 </div>
             </div> -->
-            
-            <div class="post" onclick="location.href='https://www.instructables.com/DIY-Low-Cost-Air-Hockey-Table/';">
-                <img class="thumbnail" src="./images/projects/DIY Low Cost Air Hockey Table/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">DIY Low Cost Air Hockey Table</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Fusion360, Digital Fabrication, Woodworking, Arduino</p>
-                    <p class="post-intro">Designed and built an air hockey table from scratch using CAD and CAM tools at a low cost. This design features an Arduino based point tracking system and RGB lights</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://www.instructables.com/Quarter-Iso-grid-Cardboard-Longboard/';">
-                <img class="thumbnail" src="./images/projects/Quarter Iso-grid Cardboard Longboard/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Quarter Iso-grid Cardboard Longboard</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Fusion360, Digital Fabrication</p>
-                    <p class="post-intro">Designed and built a structurally stable longboard deck using cardboard and no adhesives. The design consists of an iso-grid built with cardboard pieces that were lasercut</p>
-                </div>
-            </div>
 
-            <div class="post" onclick="location.href='https://github.com/kousheekc/Long-Range-Autonomous-Surface-Vehicle';">
-                <img class="thumbnail" src="./images/projects/Long Range Autonomous Surface Vehicle/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Long Range Autonomous Surface Vehicle</h3>
-                    <p class="post-skills"><strong>Skills: </strong>PID Control, Waypoint Tracking, GPS, Arduino</p>
-                    <p class="post-intro">Developed a waypoint tracking controller for an autonomous surface vehicle and tested the pipeline on a scratch-built catamaran style boat</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://github.com/kousheekc/Deep-Learning-Toolkit-using-Numerical-Differentiation';">
-                <img class="thumbnail" src="./images/projects/Deep Learning Toolkit using Numerical Differentiation/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Deep Learning Toolkit using Numerical Differentiation</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Object Oriented Programming, Numerical Differentiation</p>
-                    <p class="post-intro">Developed a toolkit from scratch for building and training deep learning models. The results are comparable to widely used machine learning toolkits like Pytorch</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://www.instructables.com/Raspberry-Pi-Powered-IOT-Garden/';">
-                <img class="thumbnail" src="./images/projects/Raspberry Pi Powered IOT Garden/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Raspberry Pi Powered IOT Garden</h3>
-                    <p class="post-skills"><strong>Skills: </strong>IOT, Sensors, Firebase</p>
-                    <p class="post-intro">Built an IOT powered garden that can monitor the health of the plants, transmit realtime data over the cloud and automatically water the plants when required</p>
-                </div>
-            </div>
-
-            <div class="post" onclick="location.href='https://github.com/kousheekc/Interactive-Visual-Binary-Search-Tree';">
-                <img class="thumbnail" src="./images/projects/Interactive Visual Binary Search Tree/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Interactive Visual Binary Search Tree</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Python, Algorithms</p>
-                    <p class="post-intro">Developed a visualization for binary search trees using tkinter and python. Features include adding nodes, deleting nodes and balancing the tree</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://github.com/kousheekc/Interactive-Visual-Sorting-Algorithms';">
-                <img class="thumbnail" src="./images/projects/Interactive Visual Sorting Algorithms/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Interactive Visual Sorting Algorithms</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Python, Algorithms</p>
-                    <p class="post-intro">Developed a visulation for sorting algorithms using tkinter and python. The visualization contains algorithms such as Selection Sort, Bubble Sort, Insertion Sort, Merge Sort and Quick Sort</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://github.com/kousheekc/DIY-Spectrometer-Analyser';">
-                <img class="thumbnail" src="./images/projects/DIY Low Cost Spectrometer/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">DIY Low Cost Spectrometer</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Image Processing, Spectroscopy</p>
-                    <p class="post-intro">Built a low cost spectrometer out of household materials and used a webcam to capture the sensor data. The data was processed through image processing techniques to study the electromagnetic spectra of the oncoming light</p>
-                </div>
-            </div>
-            
-            <div class="post" onclick="location.href='https://github.com/kousheekc/Smart-Garbage-Monitoring-System';">
-                <img class="thumbnail" src="./images/projects/Smart Garbage Monitoring System for Urban Environments/cover.jpg" alt="">
-                <div class="post-preview">
-                    <h3 class="post-title">Smart Garbage Monitoring System for Urban Environments</h3>
-                    <p class="post-skills"><strong>Skills: </strong>Internet of Things, Arduino</p>
-                    <p class="post-intro">Developed a system for monitoring garbage levels in garbage bins and determining the most efficient path for the garbage collection truck</p>
-                </div>
-            </div>
-
+        <div
+          class="post"
+          onclick="location.href='https://www.instructables.com/DIY-Low-Cost-Air-Hockey-Table/';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/DIY Low Cost Air Hockey Table/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">DIY Low Cost Air Hockey Table</h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Fusion360, Digital Fabrication,
+              Woodworking, Arduino
+            </p>
+            <p class="post-intro">
+              Designed and built an air hockey table from scratch using CAD and
+              CAM tools at a low cost. This design features an Arduino based
+              point tracking system and RGB lights
+            </p>
+          </div>
         </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://www.instructables.com/Quarter-Iso-grid-Cardboard-Longboard/';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Quarter Iso-grid Cardboard Longboard/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">Quarter Iso-grid Cardboard Longboard</h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Fusion360, Digital Fabrication
+            </p>
+            <p class="post-intro">
+              Designed and built a structurally stable longboard deck using
+              cardboard and no adhesives. The design consists of an iso-grid
+              built with cardboard pieces that were lasercut
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/Long-Range-Autonomous-Surface-Vehicle';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Long Range Autonomous Surface Vehicle/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">Long Range Autonomous Surface Vehicle</h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>PID Control, Waypoint Tracking, GPS,
+              Arduino
+            </p>
+            <p class="post-intro">
+              Developed a waypoint tracking controller for an autonomous surface
+              vehicle and tested the pipeline on a scratch-built catamaran style
+              boat
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/Deep-Learning-Toolkit-using-Numerical-Differentiation';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Deep Learning Toolkit using Numerical Differentiation/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">
+              Deep Learning Toolkit using Numerical Differentiation
+            </h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Object Oriented Programming, Numerical
+              Differentiation
+            </p>
+            <p class="post-intro">
+              Developed a toolkit from scratch for building and training deep
+              learning models. The results are comparable to widely used machine
+              learning toolkits like Pytorch
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://www.instructables.com/Raspberry-Pi-Powered-IOT-Garden/';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Raspberry Pi Powered IOT Garden/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">Raspberry Pi Powered IOT Garden</h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>IOT, Sensors, Firebase
+            </p>
+            <p class="post-intro">
+              Built an IOT powered garden that can monitor the health of the
+              plants, transmit realtime data over the cloud and automatically
+              water the plants when required
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/Interactive-Visual-Binary-Search-Tree';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Interactive Visual Binary Search Tree/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">Interactive Visual Binary Search Tree</h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Python, Algorithms
+            </p>
+            <p class="post-intro">
+              Developed a visualization for binary search trees using tkinter
+              and python. Features include adding nodes, deleting nodes and
+              balancing the tree
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/Interactive-Visual-Sorting-Algorithms';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Interactive Visual Sorting Algorithms/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">Interactive Visual Sorting Algorithms</h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Python, Algorithms
+            </p>
+            <p class="post-intro">
+              Developed a visulation for sorting algorithms using tkinter and
+              python. The visualization contains algorithms such as Selection
+              Sort, Bubble Sort, Insertion Sort, Merge Sort and Quick Sort
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/DIY-Spectrometer-Analyser';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/DIY Low Cost Spectrometer/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">DIY Low Cost Spectrometer</h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Image Processing, Spectroscopy
+            </p>
+            <p class="post-intro">
+              Built a low cost spectrometer out of household materials and used
+              a webcam to capture the sensor data. The data was processed
+              through image processing techniques to study the electromagnetic
+              spectra of the oncoming light
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="post"
+          onclick="location.href='https://github.com/kousheekc/Smart-Garbage-Monitoring-System';"
+        >
+          <img
+            class="thumbnail"
+            src="./images/projects/Smart Garbage Monitoring System for Urban Environments/cover.jpg"
+            alt=""
+          />
+          <div class="post-preview">
+            <h3 class="post-title">
+              Smart Garbage Monitoring System for Urban Environments
+            </h3>
+            <p class="post-skills">
+              <strong>Skills: </strong>Internet of Things, Arduino
+            </p>
+            <p class="post-intro">
+              Developed a system for monitoring garbage levels in garbage bins
+              and determining the most efficient path for the garbage collection
+              truck
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- projects section end  -->
 
     <!-- about me section start  -->
     <section class="about" id="about">
-        <h3 class="title">About me</h3>
-        <div class="about-content max-width flex items-center justify-between">
-            <div class="column about-image">
-                <img src="./images/profile_pic.jpg" alt="">
-            </div>
-            <div class="column about-text">
-                <div class="text">Hi! Here's a little about me.</div>
-                <p>I'm Kousheek, and I am currently a Robotics Researcher at the SMART Mechatronics and Robotics Group in Enschede, Netherlands. My research is primarily focused on the intersection of optimal control, reinforecement learning and aerial robotics. I recently graduated from a joint Master's in Robotics and Autonomous Systems from Ecole Polytechnique Universitaire de Lille and Ecole Centrale de Lille with highest honours (Mention Très Bien). Before this I completed a Dual Bachelor's Degree in Mathematics and Computer Science from Sri Aurobindo International Centre of Education. Apart from my professional/academic life, I am an FPV Drone Enthusiast and I enjoy reading, travelling and playing table tennis.</p>
-                <br>
-                <p>In my free time, I'm learning about vision-language-action models (such as GROOT-N1, pi0, etc), as well as other "embodied AI" frameworks, and exploring how these can be used for perception, decision-making, and coordination for swarm aerial robotics in physical interaction tasks. If these topics interest you, I'd love to have a chat!</p>
-            </div>
+      <h3 class="title">About me</h3>
+      <div class="about-content max-width flex items-center justify-between">
+        <div class="column about-image">
+          <img src="./images/profile_pic.jpg" alt="" />
         </div>
+        <div class="column about-text">
+          <div class="text">Hi! Here's a little about me.</div>
+          <p>
+            I'm Kousheek, and I am currently a Robotics Researcher at the SMART
+            Mechatronics and Robotics Group in Enschede, Netherlands. My
+            research is primarily focused on the intersection of optimal
+            control, reinforecement learning and aerial robotics. I recently
+            graduated from a joint Master's in Robotics and Autonomous Systems
+            from Ecole Polytechnique Universitaire de Lille and Ecole Centrale
+            de Lille with highest honours (Mention Très Bien). Before this I
+            completed a Dual Bachelor's Degree in Mathematics and Computer
+            Science from Sri Aurobindo International Centre of Education. Apart
+            from my professional/academic life, I am an FPV Drone Enthusiast and
+            I enjoy reading, travelling and playing table tennis.
+          </p>
+          <br />
+          <p>
+            In my free time, I'm learning about vision-language-action models
+            (such as GROOT-N1, pi0, etc), as well as other "embodied AI"
+            frameworks, and exploring how these can be used for perception,
+            decision-making, and coordination for swarm aerial robotics in
+            physical interaction tasks. If these topics interest you, I'd love
+            to have a chat!
+          </p>
+        </div>
+      </div>
     </section>
     <!-- about me section end  -->
 
     <!-- contact start -->
     <section class="contact" id="contact">
-        <h3 class="title">Contact</h3>
-        <p class="text">You can contact me by email at <a href="mailto:kousheekc@gmail.com">kousheekc@gmail.com</a> or send me a message on LinkedIn.</p>
+      <h3 class="title">Contact</h3>
+      <p class="text">
+        You can contact me by email at
+        <a href="mailto:kousheekc@gmail.com">kousheekc@gmail.com</a> or send me
+        a message on LinkedIn.
+      </p>
     </section>
     <!-- contact end -->
 
     <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae eveniet sint id quod iusto, dolorum tenetur iure, quaerat hic quisquam, eaque consequuntur. Vero ut dolores est magnam. Reprehenderit, cumque maxime repellendus nobis veritatis ab aliquam quasi sapiente cupiditate ea! Incidunt dolor animi accusamus ipsam at asperiores alias, quam id adipisci nihil quibusdam modi magni soluta explicabo dicta earum quaerat sunt fugiat. Debitis, quos? Sed quas sit esse omnis, commodi non quaerat rem dolorum veritatis delectus nostrum voluptate at tenetur veniam consequuntur officiis, asperiores quasi impedit quo illum quam placeat cupiditate. Ullam eaque nam reprehenderit dolor possimus omnis quos quo odit molestias similique veniam debitis labore tempora repellat dolores iste doloremque sapiente non, ad eligendi facilis. Molestias perferendis in est unde voluptatum voluptatibus expedita minima! Earum, provident molestias impedit accusantium facilis voluptate doloribus corporis iure cum eaque! Consequuntur accusantium expedita dolore ullam animi libero vero laboriosam minima necessitatibus a deleniti dicta eveniet corporis obcaecati corrupti quasi iure, quod, voluptate distinctio fugit? Ut maxime laboriosam maiores voluptatibus impedit dolorem, voluptates laborum? Vitae pariatur accusantium cumque itaque quod reiciendis magnam, placeat beatae vero rerum, nobis autem optio dolorem. Ratione quae, animi minus neque sequi temporibus consectetur enim assumenda. Qui quae consequuntur ex commodi?</p> -->
-</body>
-
+  </body>
 </html>
